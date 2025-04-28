@@ -70,7 +70,7 @@ img {
         background-size: cover;
         margin-bottom: 15px;
         background-position: top;
-        pointer-events: none; /* ❗ make the container itself non-blocking */
+        pointer-events: auto !important; /* ❗ make the container itself non-blocking */
 
     }
     .left{

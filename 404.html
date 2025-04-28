@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <link rel="stylesheet" href="components/main.css" />
+</head>
+<body>
+  <div class="loader"></div>
+
+  <script>
+    const path = window.location.pathname.replace("/", "").toLowerCase();
+
+    const albumMap = {
+        imalive: 1,
+        thegoodbyebaby: 2,
+        scrapz: 3,
+    };
+
+    if (albumMap[path]) {
+      window.location.href = `/album_t.html?album=${albumMap[path]}`;
+    } else {
+      // Optional fallback for unknown paths
+      document.body.innerHTML = `
+        <div class="center-text" style = "position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center; flex-direction:column">
+          <h1>404</h1>
+          <p>Oops! Page not found.</p>
+          <a href="/index.html" style ="color:cyan; font-size: 2rem; text-decoration-line: underline;
+">Go back to home</a>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

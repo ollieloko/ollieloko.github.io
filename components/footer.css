@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 25px;
+}
+.footerIcon {
+    width:40px;
+    height: 40px;
+    background-size: cover;
+    margin: 0 10px; /* Adds space between the icons */
+    background-color: transparent;
+    background-blend-mode: multiply;
+}
+.footerIcon:hover {
+    background-color: rgba(0, 0, 0, 0.726);
+    background-blend-mode: multiply;
+}

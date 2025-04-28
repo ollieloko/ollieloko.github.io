@@ -1,0 +1,179 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-family: aG;
+    background-blend-mode: multiply;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: fixed;
+}
+
+#guys{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    
+    transition: all 200ms ease-in-out;
+
+}
+#container{
+    overflow: hidden;
+
+}
+#guy, #t, #tm, #bm, #b{
+    width: 90%;
+    max-width: 425px;
+    height: 425px;
+    margin: auto;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-80%,-50%);
+    -ms-transform: translate(-80%,-60%);
+}
+#guy{
+    background-image: url(../assets/images/guy/main.gif);
+
+}
+#t{
+    background-image: url(../assets/images/guy/t.gif);
+    display: none;
+}
+#tm{
+    background-image: url(../assets/images/guy/tm.gif);
+    display: none;
+}
+#bm{
+    background-image: url(../assets/images/guy/bm.gif);
+    display: none;
+}
+#b{
+    background-image: url(../assets/images/guy/b.gif);
+    display: none;
+}
+#homeBG{
+    width: 90%;
+    max-width: 600px;
+    height: 350px;
+    margin: auto;
+    border-radius: 100%;
+    background-image: url(../assets/images/imalive_tracklist.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+
+#buttons{
+    width: 90%;
+    max-width: 250px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(20%,-60%);
+    -ms-transform: translate(20%,-60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0.01; /* Set initial opacity to a value slightly less than 1 */
+    transition: opacity 500ms ease-in-out;
+    }
+    
+    #buttons.display{
+    opacity: 1; /* When you add this class, the element will fade in smoothly */
+    }
+    
+    
+    
+    
+.button{
+    font-size: 25px;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 100, 203);
+    border-radius: 15px;
+    font-family: ag_B;
+    box-shadow: 8px 8px 0px #0c3321; /* Changed to box-shadow */
+    cursor: pointer;
+    position: relative; 
+
+}
+.corner-square {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: -25px;
+    right: -35px; 
+    rotate: 25deg;
+    background-image: url(/assets/images/NEW.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: none;
+}
+.button:hover{
+    box-shadow: 4px 4px 0px #0c3321; /* Hover shadow applied via box-shadow */
+    position: relative;
+    top: 4px;
+    left: 4px;
+
+    background-color: rgb(81, 63, 161);
+    color:rgb(255, 222, 115);
+    
+}
+
+@media all and (max-width:680px){
+    #homeBG{
+        width: 125%;
+        max-width: 500px;
+        overflow: hidden;
+        height: 250px;
+    }
+    #guy, #t, #tm, #bm, #b{
+        width: 90%;
+        max-width: 200px;
+        height: 250px;
+        
+        top: 40%;
+        left: 45%;
+        transform: translate(-80%,-50%);
+        -ms-transform: translate(-80%,-60%);
+    }
+    #buttons{
+        width: 90%;
+        max-width: 150px;
+        height: 300px;
+        
+        top: 40%;
+        left: 50%;
+        transform: translate(3%,-60%);
+        -ms-transform: translate(3%,-60%);
+       
+        }
+        .button{
+            font-size: 18px;
+        }
+    
+}

@@ -1,0 +1,461 @@
+
+.listen{
+    display: none;
+}
+.corner-square {
+    position: absolute;
+    top: -25px;
+    left: -12px;
+    width: 65px;
+    height: 65px;
+    background-image: url(/assets/images/NEW.gif); /* or any color you want */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+
+  }
+
+  .imgContent{
+    position: relative;
+  }
+.info2 {
+    position: relative;
+}
+h2{
+    margin: 0%;
+    letter-spacing: .1rem;
+}
+p1{
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.651);
+}
+.albumTitle{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+}
+.MV{
+    display: none;
+    button{
+        font-size: 18px;
+        font-family: aG_B;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.541);
+        background-blend-mode: multiply;
+        padding: 5px;
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        width:100%;
+        text-align: left;
+        border: 1px solid rgba(255, 255, 255, 0.363);
+        height: 75px;
+    }
+    button:hover{
+        background-color: rgba(0, 0, 0, 0.37);
+        color: white;
+        cursor: pointer;
+    
+    }
+}
+
+h3{
+    margin: 0%;
+    font-family: aG;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    color: rgb(184, 123, 184);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    
+}
+.tracklist {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+}
+
+.track-column {
+    flex: 1 1 45%;
+
+    overflow-y: auto;
+}
+
+.track-column p {
+    margin: 0.3em 0;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.719);
+}
+.button{
+    background-color: rgb(97, 99, 219);
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.07rem;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    filter: drop-shadow(8px 8px 0px #0c3321);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    user-select: none;
+}
+.button.active {
+    background-color: #3d2b7e;  
+    color: rgb(255, 255, 255);
+    transform: translate(3px, 3px);
+
+    filter: drop-shadow(4px 4px 0px #000000);
+
+}
+.button:hover{
+    background-color: rgb(46, 29, 121);
+    filter: drop-shadow(2px 2px 0px #000000);
+    transform: translate(6px, 6px);
+    cursor: pointer;
+}
+p2{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.699);
+}
+.audioContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(163, 61, 133, 0.507);
+    max-width: 350px;
+    width: 100%;
+    padding: 2px 6px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    gap: 8px;
+    z-index: 1;
+    position: relative;
+  }
+  .audioContainer.pulsing::before {
+    content: ""; 
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 8px;
+    background: transparent;
+    border: 5px solid rgba(253, 141, 234, 0.349);
+    animation: pulse 1.5s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+  
+@keyframes pulse {
+    0% {
+      opacity: 0.2;
+      box-shadow: 0 0 5px white;
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 12px white;
+    }
+    100% {
+      opacity: 0.2;
+      box-shadow: 0 0 5px white;
+    }
+}
+  .leftA {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .rightA {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.678);
+    flex-shrink: 0;
+  }
+  
+  .playButton {
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-right: 10px;
+    background-image: url(/assets/images/icons/play.svg)
+  }
+  
+.playButton:hover{
+    filter:sepia(100%);
+    filter:brightness(80%)
+}
+@keyframes pulse2 {
+    0% {
+      opacity: 0.8;
+      box-shadow: 0 0 5px white;
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 12px white;
+    }
+    100% {
+      opacity: 0.8;
+      box-shadow: 0 0 5px white;
+    }
+}
+.listen{
+    padding: 0px;
+    margin: 5px;
+    .streaming{
+        margin-bottom: 25px;
+        button{
+            font-size: 25px;
+            font-family: aG;
+
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.562);
+            padding: 5px;
+            margin: 0px;
+            color: rgba(255, 255, 255, 0.863);
+            width:100%;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.363);
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+    }
+    p2{
+        font-size: 30px;
+        font-family: aG_B;
+        font-style: bold;
+        background-image: linear-gradient(to bottom right, rgb(27, 12, 51), rgb(94, 39, 91));
+        border-radius: 5px;
+        padding: 8px;
+        filter: drop-shadow(0px 0px .1rem rgba(244, 191, 255, 0.295));
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.308);
+    }
+    p2:hover{
+        background-image: linear-gradient(to bottom right, rgb(77, 16, 85), rgb(133, 33, 116));
+        filter: drop-shadow(0px 0px .8rem #ff74d14d);
+        cursor: pointer;
+
+    }
+    
+}
+@media all and (max-width:680px){
+    .musicMenu{
+        display: none;
+    }
+    .containerContent{
+    width: 100%;   
+    }
+    .container {
+        width:100%;
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background-size: cover;
+        background-color: #000000d7;
+        background-blend-mode: multiply;
+        padding-bottom: 25px;
+        height: 1000px;
+    }
+    
+    .albumCover{
+        margin: 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        width: 97%;
+        padding-bottom: 100%;        
+        background-size:cover;
+    }
+    .button{
+        width: 260px;
+        font-size: 1.1rem;
+        height: 2rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: aG_B;
+
+    }
+    .audioContainer{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        width: 100%;
+        justify-content: center;
+        max-width: 1000px;
+    }
+    .info{
+       
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    .info2{
+        align-items: center;
+        justify-content: center;
+        
+        p2{
+            margin: 0px;      
+        }
+    }
+    .corner-square {
+      
+        top: -15px;
+        right: -25px; 
+    }
+    
+}
+@media all and (min-width:681px){
+    .album-wrapper{
+        max-width:900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        transition: all 0.5ms ease-in-out;
+
+    }
+    .arrow{
+        background-image: url(/assets/images/icons/arrow.svg);
+        background-size: contain;
+        width: 25px;
+        height:25px;
+        margin-right: 7px;
+    }
+    .musicMenu{
+        width: fit-content;
+        font-size: 1.5rem;
+        display: flex;
+        background-color: rgb(27, 11, 27);
+        align-items: center;
+        justify-content: center;
+        padding: 5px 15px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.205);
+        cursor: pointer;
+    }
+    .musicMenu:hover{
+        background-color: rgb(102, 28, 59);
+    }
+    .bottom{
+        margin-left: 50px;
+        margin-bottom: 25px;
+    }
+    .albumCover {
+
+        width: 95%;
+        aspect-ratio: 1 / 1;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-clip: content-box;
+        margin: 5px;
+        outline: 1px solid #ffffff31;
+        filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.438));
+        cursor: pointer;
+
+
+    }
+    .imgContent{
+        display: flex;
+        justify-content: flex-start;
+        margin: auto;
+        width: 95%;
+    }
+    .containerContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: auto;
+        align-items: baseline;
+        transition: all 0.5ms ease-in-out;
+
+        width: 97%;
+    }
+    .info{
+        width: 65%;
+        align-items: flex-start;
+        justify-content: center;
+        height: 500px;
+        transition: all 0.5ms ease-in-out, height 1s ease-in-out; /* Add transition for height */
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 950px;
+        width: 100%;
+        margin: auto;
+        padding: 10px 0px;
+        justify-content: flex-start;
+        border-radius: 25px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.822);
+        background-blend-mode: multiply;
+        margin-bottom: 20px;
+        height:auto;
+        min-height: 525px;
+        overflow: hidden;
+        transition: all 0.5ms ease-in-out, height 1s ease-in-out; /* Add transition for height */
+
+    }
+    
+    @media all and (max-width:850px){
+        .tracklist{
+        overflow: hidden;  
+    }
+    .info2{
+        margin-top: 0px;
+        padding-top: 0px;
+        overflow: hidden;    
+        justify-content: baseline;
+        p2{
+            display: none;
+        }
+    }
+    .listen{
+        .streaming{
+            button{
+                font-size: 125%;
+                }
+            }
+        }
+        .button{
+            font-size: 115%;
+        }
+        .audioContainer{
+            height: 25px;    
+            margin-top: 0px;
+
+        }
+    }
+    
+}

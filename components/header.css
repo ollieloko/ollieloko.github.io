@@ -1,0 +1,95 @@
+header{
+    display: flex;
+     
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
+    width: 100%;
+  }
+.mobMenu{
+display: none;
+pointer-events: none; /* makes sure it doesn't block scroll or clicks */
+
+}
+.menuButton {
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 9px;
+    max-width: 220px;
+    max-height: 30px;
+    width: 100%;
+    text-align: center;
+    
+}
+.menuButton:hover{
+    background-color: rgb(211, 112, 203);
+    color: black;
+}
+.menuButton.active {
+    border-bottom: 3px solid white;
+    color: white;
+    background-color: rgba(255, 56, 195, 0.171);
+}
+.menuButton.active:hover {
+    background-color: rgb(211, 112, 203); /* Keep the hover effect */
+    color: black; /* Ensure text color changes on hover */
+}
+.menu{
+    display:flex;
+}
+.menuLogo {
+    width: 100px;
+    height: 100px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100px;
+    background-image: url('/assets/images/menuLogo.gif');
+    margin: 10px;
+}
+.menuLogo:hover{
+    background-image: url('/assets/images/menuLogo_hover.gif');
+}
+@media all and (max-width:680px){
+    header{ 
+        height: 75px;
+        background-image: url(/assets/images/imalive_background.png);
+        position: fixed;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.651);
+        background-blend-mode: multiply;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        top: 0;
+        z-index: 5;
+        transform: translate(-7px, 0px);
+    }
+    .menuLogo{
+        width: 75px;
+        height: 75px;
+    }
+    .menuButton, .right{
+        display: none;
+    }
+    .mobMenu{
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top:17px;
+        right: -5px;
+        background-image: url(/assets/images/icons/menu.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 25;
+    }
+}

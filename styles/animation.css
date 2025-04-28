@@ -1,0 +1,276 @@
+
+
+.info2{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    p1,p2{
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.849);
+    }
+    p3{
+        padding-top: 10px;
+        font-size: .9rem;
+        color: rgba(255, 255, 255, 0.644);
+    }
+}
+
+
+.nameContainer.selected{
+    background-color: rgba(255, 121, 210, 0.486);
+}
+.nameContainer.selected:hover{
+    background-color: rgba(163, 40, 122, 0.486);
+}
+.nameContainer:hover{
+    background-color: rgba(255, 255, 255, 0.178);
+    cursor: pointer;
+}
+.nameContainer{
+
+.year.new{
+    color: yellow;
+}
+}
+.info1{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    background-color: rgba(240, 248, 255, 0.096);
+}
+
+@media all and (max-width:680px){
+    .line3{
+        font-size: .8rem;
+        padding: 0px;
+        color: rgba(255, 255, 255, 0.568);
+        margin:0px;
+        margin-bottom: 10px;
+    }
+    .title{
+        font-size: 1.7rem;
+        margin: 0px;
+        font-family: ag_B;
+        font-style: bold;
+        padding: 0px;
+        height: 50%;
+    }
+    .info2{
+        padding: 0px;
+        padding-bottom: 5px;
+
+        p1,p2{
+            font-size: .8rem;
+            color: rgba(255, 255, 255, 0.781);
+        }
+        p3{
+            padding: 0px;
+            margin: 0px;
+            font-size: .5rem;
+        }
+    }
+    .container{
+        margin-top: 70px;
+        padding: 9px;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    .info1{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        background-color: rgba(240, 248, 255, 0.096);
+    }
+    .top{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .preview{
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+        padding-bottom: 100%;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+    .nameContainer{
+        width:100%;
+        background-color: rgba(0, 0, 0, 0.692);
+        border: 1px solid rgba(255, 255, 255, 0.226);
+        align-items: center;
+        display: flex;
+        padding-bottom: 10px;
+        flex-direction: row;
+        .name{
+            font-size: 18px;
+            margin: 0;
+            padding: 8px;
+        }
+        .year{
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.616);
+        }
+        
+    }
+    
+    .preview.loading::after{
+        content: "";
+        width: 100px;
+        height:100px;
+        background-image: url(../assets/images/icons/loading2.gif);
+        background-size: contain;
+        transition: opacity 0.5s ease-in-out;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .preview.play::after{
+        content: "";
+        width: 50px;
+        height:50px;
+        background-image: url(../assets/images/icons/play.svg);
+        background-size: contain;
+        opacity: .7;
+        mix-blend-mode:screen;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        z-index: 0;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .1s ease-out;
+
+    }
+    
+    .preview.play.hidden::after{
+        opacity: 0;
+    
+    }
+    .preview.play:hover::after{
+        width: 75px;
+        height:75px;
+        opacity: 1;
+
+    }
+
+}
+@media all and (min-width:681px) {
+    .title{
+        display: none;
+    }
+    .page-container{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        padding : 20px 20px;
+
+    }
+    .preview{
+        width:95%;
+        height:500px;
+        background-size: cover;
+        background-color: black;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.589);
+        cursor:pointer;
+        
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 850px;
+        display: flex;
+        width: 100%;
+        margin: auto;        
+        justify-content: space-between;
+        border-radius: 25px;
+        background-size: cover;
+        background-image: url(../assets/images/imalive_background.png);
+        background-color: rgba(0, 0, 0, 0.822);
+        background-blend-mode: multiply;
+        margin-bottom: 25px;
+        height: auto; 
+        overflow-y: auto; 
+        flex-grow: 1;
+        max-height: 600px; 
+        padding: 10px 0px;
+        background-position-x: center;
+
+    }
+    .nameContainer{
+        width:19rem;
+        background-color: rgba(0, 0, 0, 0.692);
+        border: 1px solid rgba(255, 255, 255, 0.226);
+        height: 35px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        .name{
+            font-size: 18px;
+            margin: 0;
+            padding: 8px;
+        }
+        .year{
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.616);
+        }
+    }
+    
+    .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 97%;
+    }
+    
+    .preview.loading::after{
+        content: "";
+        width: 100px;
+        height:100px;
+        background-image: url(../assets/images/icons/loading2.gif);
+        background-size: contain;
+        transition: opacity 0.5s ease-in-out;
+    
+    }
+    .preview.play::after{
+        content: "";
+        width: 75px;
+        height:75px;
+        background-image: url(../assets/images/icons/play.svg);
+        background-size: contain;
+        transition: all .1s ease-out;
+        opacity: .7;
+        mix-blend-mode:screen;
+    
+    
+    }
+    .preview.play:hover::after{
+        width: 100px;
+        height:100px;
+        opacity: 1;
+    }
+    .preview.play.hidden::after{
+        opacity: 0;
+        transition: all .1s ease-out;
+    
+    }
+    
+}

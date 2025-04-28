@@ -1,0 +1,116 @@
+/*  ALBUM BOXES */
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffffac;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 650px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, var(--bGopacity));
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: relative;
+}
+
+.corner-square {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 65px;
+    height: 65px;
+    background-image: url(/assets/images/NEW.gif); /* or any color you want */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.box img {
+    width: 200px;
+    height: auto;
+    margin-right: 16px;
+    border-radius: 2px;
+    border: 1px solid #ffffff69;
+}
+
+.box-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 600px;
+
+}
+.box:hover{
+    background-color: rgba(0, 0, 0, calc(var(--bGopacity)/1.2));
+    font-size: larger;
+}   
+
+h2 {
+    font-family: aG;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0%;
+    margin-right: 5px;
+}
+p1 {
+    font-family: aG;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.699);
+}
+p2 {
+    font-family: aG;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.432);
+
+}
+.title{
+    display: inline;
+    margin-bottom: 15px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media all and (max-width:680px){
+    .box-container {
+        width: auto;
+        justify-content:center;
+        align-items: center;
+        margin: none;
+        padding: 5px;
+        margin-top: 80px;
+    }
+    .box{
+        padding: 15px;
+        border: 1px solid #ffffff33;
+        height: 10rem;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .box img {
+        width: 125px;
+    }
+    p1{
+        font-size: .8rem;
+    }
+    p2{
+        font-size: .8rem;
+    }
+}

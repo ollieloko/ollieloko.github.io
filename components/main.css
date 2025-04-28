@@ -1,0 +1,330 @@
+/*  FONTS */
+@font-face {
+    font-family: aG;
+    src: url(../assets/fonts/AlteHaasGroteskRegular.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: aG_B;
+    src: url(../assets/fonts/AlteHaasGroteskBold.ttf);
+    font-style: bold;
+    font-weight: 300;
+}
+:root {
+    --bGopacity: 0.8;
+    --backgroundSize: 750px;
+  }
+
+
+html {
+    height: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    background-blend-mode: multiply;
+    box-sizing: border-box;
+    font-family: aG;
+    width: 100%;
+}
+
+.circles{
+    position: fixed; /* <-- was absolute before, FIXED is better */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/images/flowee.svg);
+    background-color: rgba(0, 0, 0, 0.712);
+    background-blend-mode: multiply;
+    animation: flowers1 25s linear infinite forwards;
+
+    bottom: -150px;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.circles li:nth-child(1){
+    left: 45%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: -2s;
+    animation-duration: 8s;
+}
+
+.circles li:nth-child(3){
+    left: 15%;
+    width: 20px;
+    height: 20px;
+    animation-delay: -14s;
+    animation-duration: 12s;
+
+}
+
+.circles li:nth-child(4){
+    left: 80%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(5){
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    animation-delay: -5s;
+}
+
+.circles li:nth-child(6){
+    left: 25%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 2s;
+}
+
+.circles li:nth-child(7){
+    left: 65%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(8){
+    left: 90%;
+    width: 25px;
+    height: 25px;
+    animation-delay: -7s;
+    animation-duration: 5s;
+}
+
+.circles li:nth-child(9){
+    left: 75%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 18s;
+    animation-duration: 25s;
+}
+
+.circles li:nth-child(10){
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    animation-delay: -25s;
+    animation-duration: 15s;
+    animation-range-start: 25%;
+}
+
+.circles2{
+    position: fixed; /* <-- was absolute before, FIXED is better */
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+.circles2 li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/images/flowee.svg);
+    background-color: rgba(0, 0, 0, 0.712);
+    background-blend-mode: multiply;
+    animation: flowers2 25s linear infinite forwards;
+    bottom: -150px;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.circles2 li:nth-child(1){
+    left: 80%;
+    width: 20px;
+    height: 20px;
+    animation-delay: -3s;
+    animation-duration: 8s;
+}
+
+.circles2 li:nth-child(2){
+    left: 15%;
+    width: 80px;
+    height: 80px;
+    animation-delay: -5s;
+}
+
+.circles2 li:nth-child(3){
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    animation-delay: -0s;
+    animation-duration: 15s;
+}
+
+.circles2 li:nth-child(4){
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 14s;
+    animation-duration: 12s;
+}
+
+.circles2 li:nth-child(5){
+    left: 45%;
+    width: 15px;
+    height: 15px;
+    animation-delay: -18s;
+    animation-duration: 25s;
+}
+
+.circles2 li:nth-child(6){
+    left: 65%;
+    width: 150px;
+    height: 150px;
+    animation-delay: -4s;
+}
+
+.circles2 li:nth-chil
+
+
+
+.flowers{
+    position: fixed; /* <- change to fixed */
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none; /* optional: makes background unclickable */
+    z-index: -1; /* stay behind content */
+}
+@keyframes flowers1 {
+
+    0%{
+        transform: translateY(-50vh) rotate(0deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh) rotate(720deg);
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes flowers2 {
+
+    0%{
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 0;
+
+    }
+    10%{
+        opacity: 1;
+
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-50vh) rotate(720deg);
+        opacity: 0;
+
+    }
+
+}
+
+
+
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    width: inherit;
+  }
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 5;
+    transition: all 0.1s ease-out;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content:"";
+    width: 275px;
+    height: 275px;
+    background-image: url('/assets/images/icons/loading.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 5; /* pushes it behind all other content */
+    pointer-events: none; /* makes sure it doesn't block scroll or clicks */
+}
+.background::after{
+    content: "";
+    position: absolute;
+    left: -50%;
+    top:  -50%;
+    width: 200vw;
+    height: 200vh;
+    background-image: url('../assets/images/noise.png');
+    opacity: 0.04;
+    animation: grain 0.7s steps(4) infinite;
+    pointer-events: none;
+}
+@keyframes grain {
+    0%, 100% {transform: translate(0,0);}
+    10% {transform:translate(-9%, -10%)}
+    30% {transform:translate(12%, 7%)}
+    50% {transform:translate(-12%, -9%)}
+    70% {transform:translate(-1%, 4%)}
+    90% {transform:translate(11%, 11%)}
+
+}

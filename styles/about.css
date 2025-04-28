@@ -11,7 +11,7 @@
     display: none;
 }
 .flower.dying{
-    background-image: url(../assets/images/dyingFlower.gif);
+    background-image: url(/assets/images/dyingFlower.gif);
     z-index: 15;
 }.flower.dying.dead{
     background-image: url(../assets/images/deadFlower.png);

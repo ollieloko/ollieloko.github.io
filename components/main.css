@@ -49,7 +49,7 @@ html {
     list-style: none;
     width: 20px;
     height: 20px;
-    background-image: url(/assets/images/flowee.svg);
+    background-image: url(../assets/images/flowee.svg);
     background-color: rgba(0, 0, 0, 0.712);
     background-blend-mode: multiply;
     animation: flowers1 25s linear infinite forwards;
@@ -154,7 +154,7 @@ html {
     list-style: none;
     width: 20px;
     height: 20px;
-    background-image: url(/assets/images/flowee.svg);
+    background-image: url(../assets/images/flowee.svg);
     background-color: rgba(0, 0, 0, 0.712);
     background-blend-mode: multiply;
     animation: flowers2 25s linear infinite forwards;
@@ -293,7 +293,7 @@ a {
     content:"";
     width: 275px;
     height: 275px;
-    background-image: url('/assets/images/icons/loading.gif');
+    background-image: url('../assets/images/icons/loading.gif');
     background-size:contain;
     background-repeat: no-repeat;
 }

@@ -1,5 +1,5 @@
 .flower{
-    background-image: url(../assets/images/flower.gif);
+    background-image: url(/assets/images/flower.gif);
     height:500px;
     width: 100px;
     background-size: contain;

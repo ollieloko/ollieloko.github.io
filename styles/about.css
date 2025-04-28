@@ -1,6 +1,6 @@
 .flower{
     background-image: url(/assets/images/flower.gif);
-    height:500px;
+    height:150px;
     width: 100px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -8,6 +8,7 @@
     margin-top: 10px;
     background-color: rgba(0,0,0,0.001); /* <<<< ADD THIS */
     pointer-events: auto;
+    border: none;
 }
 .touch-fix {
     position: relative;

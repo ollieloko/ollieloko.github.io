@@ -4,7 +4,7 @@ let me = document.getElementById('me');
 let left = document.getElementById('left');
 let right = document.getElementById('right');
 let loaded = 0;
-let loadedB = true;
+let loadedB = false;
 
 function checkIMG(){
     if (loaded == 5){
@@ -44,8 +44,10 @@ flower5.addEventListener('canplaythrough', () => {
     checkIMG();
 });
 flower5.src = '/assets/audio/flower2.wav';
+flower.addEventListener("touchstart", handleFlowerClick);
+flower.addEventListener("click", handleFlowerClick);
 
-flower.addEventListener("click", function() {
+function handleFlowerClick() {
     console.log("flower clicked");
     if (loadedB == true){
         if (killed == false){
@@ -74,7 +76,7 @@ flower.addEventListener("click", function() {
             }, 800); 
         }
 }
-})
+}
 
 
 function updateSize() {

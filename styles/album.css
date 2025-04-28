@@ -107,6 +107,8 @@ h3{
     margin-top: 10px;
     margin-right: 10px;
     user-select: none;
+    cursor: pointer;
+
 }
 .button.active {
     background-color: #3d2b7e;  
@@ -116,12 +118,7 @@ h3{
     filter: drop-shadow(4px 4px 0px #000000);
 
 }
-.button:hover{
-    background-color: rgb(46, 29, 121);
-    filter: drop-shadow(2px 2px 0px #000000);
-    transform: translate(6px, 6px);
-    cursor: pointer;
-}
+
 p2{
     font-size: 15px;
     color: rgba(255, 255, 255, 0.699);
@@ -342,6 +339,12 @@ img {
         margin: auto;
         transition: all 0.5ms ease-in-out;
 
+    }
+    .button:hover{
+        background-color: rgb(46, 29, 121);
+        filter: drop-shadow(2px 2px 0px #000000);
+        transform: translate(6px, 6px);
+        cursor: pointer;
     }
     .arrow{
         background-image: url(/assets/images/icons/arrow.svg);

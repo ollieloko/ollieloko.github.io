@@ -9,13 +9,6 @@
     background-color: rgba(0,0,0,0.001); /* <<<< ADD THIS */
     pointer-events: auto;
     border: none;
-    touch-action: auto; /* Ensures touch events are recognized on this element */
-
-}
-
-
-#box-container, .left, .right {
-    pointer-events: auto; /* Make sure no parent element has pointer-events: none */
 }
 .touch-fix {
     position: relative;
@@ -46,23 +39,9 @@
     z-index: 10;
     display: none;
 }
-#void {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    z-index: 10;
-    opacity: 0; /* start invisible */
-    pointer-events: none; /* don't block clicks initially */
-    transition: opacity 2s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#void.show {
-    opacity: 1;
+#void.show{
+    opacity: 0;
+    transition: all 2s ease-in-out;
 }
 img {
     display: block;     /* So it acts like a <div> */

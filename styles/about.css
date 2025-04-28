@@ -10,7 +10,6 @@
     pointer-events: auto;
     border: none;
     touch-action: auto; /* Ensures touch events are recognized on this element */
-    cursor: pointer;
 
 }
 

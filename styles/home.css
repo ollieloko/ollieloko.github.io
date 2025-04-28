@@ -127,7 +127,7 @@ body {
     top: -25px;
     right: -35px; 
     rotate: 25deg;
-    background-image: url(assets/images/NEW.gif);
+    background-image: url(/assets/images/NEW.gif);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -100,7 +100,9 @@ img {
         margin-top: 50px;
         font-family: ag_B;
     }
-
+    .email{
+        margin-top: 15px;
+    }
     
 }
 @media all and (min-width:681px) {
@@ -158,7 +160,9 @@ p3{
     background-position: right;
     border-radius: 15px;
 }
-
+.name{
+    margin-bottom: 25px;
+}
 }
 
 

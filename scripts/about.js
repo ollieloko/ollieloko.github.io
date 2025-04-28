@@ -1,4 +1,4 @@
-let flower = document.getElementById('flower')
+let flower = document.getElementById('flower');
 killed = false
 let me = document.getElementById('me');
 let left = document.getElementById('left');

@@ -4,7 +4,7 @@ let me = document.getElementById('me');
 let left = document.getElementById('left');
 let right = document.getElementById('right');
 let loaded = 0;
-let loadedB = false;
+let loadedB = true;
 
 function checkIMG(){
     if (loaded == 5){

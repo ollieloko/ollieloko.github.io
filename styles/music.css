@@ -9,7 +9,7 @@
     padding: 25px;
 }
 
-.imalive_box, .tgb_box, .scrapz_box{
+.box {
     display: flex;
     align-items: center;
     border: 1px solid #ffffffac;
@@ -17,24 +17,17 @@
     padding: 25px;
     max-width: 650px;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.795);
+    background-blend-mode: multiply;
     background-size: cover;
-    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    isolation: isolate;
 }
-.imalive_box{
-    background-image: url(/assets/images/imalive_background.png);
-    background-color: rgba(0, 0, 0, 0.708);
-    background-blend-mode: multiply;
-}
-.tgb_box{
-    background-image: url(/assets/images/tgb_background.png);
-    background-color: rgba(0, 0, 0, 0.708);
-    background-blend-mode: multiply;
-}
-.scrapz_box{
+.scrapz-bg {
     background-image: url(/assets/images/scrapz_background.png);
-    background-color: rgba(0, 0, 0, 0.708);
-    background-blend-mode: multiply;
-}
+  }
 .corner-square {
     position: absolute;
     top: 5px;
@@ -46,7 +39,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-.imalive_box img, .tgb_box img, .scrapz_box img {
+.box img {
     width: 200px;
     height: auto;
     margin-right: 16px;
@@ -54,7 +47,7 @@
     border: 1px solid #ffffff69;
 }
 
-.imalive_box-link, .tgb_box-link, .scrapz_box-link {
+.box-link {
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -63,7 +56,7 @@
     max-width: 600px;
 
 }
-.imalive_box:hover, .tgb_box:hover, .scrapz_box:hover{
+.box:hover{
     background-color:rgba(0, 0, 0, 0.795);
     font-size: larger;
 }   
@@ -108,7 +101,7 @@ p2 {
         padding: 5px;
         margin-top: 80px;
     }
-    .imalive_box, .tgb_box, .scrapz_box{
+    .box{
         padding: 15px;
         border: 1px solid #ffffff33;
         height: 10rem;
@@ -116,7 +109,7 @@ p2 {
     h2 {
         font-size: 22px;
     }
-    .imalive_box img, .tgb_box img, .scrapz_box img {
+    .box img {
         width: 125px;
     }
     p1{

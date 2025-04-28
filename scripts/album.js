@@ -17,7 +17,7 @@ let cover = "";
 let mobile = false;
 let MVbar = false;
 let albumClicked = false;
-
+let bg = "";
 
 fetch('/data/albumInfo.json')
 .then(response => response.json())
@@ -43,7 +43,7 @@ fetch('/data/albumInfo.json')
   cover = albumData.cover;
   altCover = albumData.altCover;
 
-  document.getElementById("container").style.backgroundImage = `url(${albumData.background})`;
+  bg = `url(${albumData.background})`;
 
  
   document.getElementById("name").style.fontSize = albumData.nameSize;
@@ -253,10 +253,12 @@ document.getElementById('cover').addEventListener('click', function() {
 function updateSize() {
   if (window.innerWidth < 680) {
     mobile = true; 
+    document.getElementById('container').style.backgroundImage = "none";
+
   }
   if (window.innerWidth >680){
     mobile = false;
-
+    document.getElementById('container').style.backgroundImage = bg;
   }
 }
 

@@ -273,10 +273,10 @@ img {
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        background-size: cover;
+        background: none; /* REMOVE background image and color */
+        background-color: transparent;
         background-image: none;
-        background-color: none;
-        padding-bottom: 25px;
+        backdrop-filter: none;        padding-bottom: 25px;
         height: 1000px;
     }
     

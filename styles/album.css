@@ -196,7 +196,7 @@ p2{
     cursor: pointer;
     flex-shrink: 0;
     margin-right: 10px;
-    background-image: url(/assets/images/icons/play.svg)
+    background-image: url(/assets/images/icons/play.svg);
   }
   
 .playButton:hover{

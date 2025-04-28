@@ -81,7 +81,7 @@ function updateSize() {
         left.insertBefore(me, document.getElementById("info"));
     }
     if (window.innerWidth >680){
-        right.insertBefore(me, document.getElementById("nothing"));
+        document.getElementById('box-container').insertBefore(me, document.getElementById("nothing"));
     }
 }  
 window.addEventListener("resize", updateSize);

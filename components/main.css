@@ -1,14 +1,14 @@
 /*  FONTS */
 @font-face {
     font-family: aG;
-    src: url(../assets/fonts/AlteHaasGroteskRegular.ttf);
+    src: url(/assets/fonts/AlteHaasGroteskRegular.ttf);
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: aG_B;
-    src: url(../assets/fonts/AlteHaasGroteskBold.ttf);
+    src: url(/assets/fonts/AlteHaasGroteskBold.ttf);
     font-style: bold;
     font-weight: 300;
 }

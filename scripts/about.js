@@ -11,6 +11,8 @@ function loadImage(src) {
         img.src = src;
     });
 }
+const flowerSound1 = new Audio('/assets/audio/flower.wav');
+const flowerSound2 = new Audio('/assets/audio/flower2.wav');
 
 function loadAudio(src) {
     return new Promise((resolve) => {
@@ -30,18 +32,20 @@ const assetsToLoad = [
 
 Promise.all(assetsToLoad).then(() => {
     console.log('All assets loaded');
-
-    flower.addEventListener('click', handleFlowerClick);
-    flower.addEventListener('touchstart', handleFlowerClick); // mobile Safari fix
+    flower.addEventListener('pointerdown', handleFlowerClick);
 });
 
-function handleFlowerClick() {
+
+function handleFlowerClick(e) {
     if (killed) return;
     killed = true;
+    e.preventDefault();
+    e.stopPropagation();
 
-    document.getElementById('void').style.display = "block";
-    flower.classList.add('dying');
+    document.getElementById('void').classList.add('show');
     
+    flower.classList.add('dying');
+
     ['circles', 'circles2'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.style.display = "none";
@@ -57,9 +61,6 @@ function handleFlowerClick() {
 
     me.classList.add('look');
 
-    const flowerSound1 = new Audio('/assets/audio/flower.wav');
-    const flowerSound2 = new Audio('/assets/audio/flower2.wav');
-    
     flowerSound1.play();
 
     setTimeout(() => {
@@ -72,6 +73,7 @@ function handleFlowerClick() {
         flowerSound2.play();
     }, 800);
 }
+
 
 function updateSize() {
     if (window.innerWidth < 681) {

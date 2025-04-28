@@ -9,6 +9,13 @@
     background-color: rgba(0,0,0,0.001); /* <<<< ADD THIS */
     pointer-events: auto;
     border: none;
+    touch-action: auto; /* Ensures touch events are recognized on this element */
+
+}
+
+
+#box-container, .left, .right {
+    pointer-events: auto; /* Make sure no parent element has pointer-events: none */
 }
 .touch-fix {
     position: relative;

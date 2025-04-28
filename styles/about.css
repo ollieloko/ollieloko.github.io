@@ -63,12 +63,15 @@ img {
         background-size: cover;
         margin-bottom: 15px;
         background-position: top;
-        
+        pointer-events: none; /* ❗ make the container itself non-blocking */
+
     }
     .left{
         width: 95%;
         margin: auto;
         z-index: 0;
+        pointer-events: auto; /* ❗ allow clicks inside */
+
     }
     h2{
         font-size: 50px;
@@ -89,6 +92,7 @@ img {
         height: 180px;
         width: 125px;
         position: relative;
+        pointer-events: auto; /* ❗ allow the flower specifically */
 
         background-size: cover;
 

@@ -7,7 +7,7 @@ class MenuHeader extends HTMLElement {
 
         this.innerHTML = `
             <header>
-            <link rel="stylesheet" href="/components/header.css">
+            <link rel="stylesheet" href="components/header.css">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <div class="mobMenu"></div>
             <a href="index.html">
@@ -71,7 +71,7 @@ class FooterMain extends HTMLElement {
         this.innerHTML = `
             <footer>
             
-            <link rel="stylesheet" href="/components/footer.css">
+            <link rel="stylesheet" href="components/footer.css">
 
                 <a href="https://www.instagram.com/ollieloko" target="_blank">
                     <div class="footerIcon" style="background-image: url('/assets/images/icons/insta.png');"></div>

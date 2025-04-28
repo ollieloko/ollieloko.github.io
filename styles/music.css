@@ -9,7 +9,7 @@
     padding: 25px;
 }
 
-.box {
+.imalive_box, .tgb_box, .scrapz_box{
     display: flex;
     align-items: center;
     border: 1px solid #ffffffac;
@@ -20,7 +20,21 @@
     background-size: cover;
     position: relative;
 }
-
+.imalive_box{
+    background-image: url(/assets/images/imalive_background.png);
+    background-color: rgba(0, 0, 0, 0.708);
+    background-blend-mode: multiply;
+}
+.tgb_box{
+    background-image: url(/assets/images/tgb_background.png);
+    background-color: rgba(0, 0, 0, 0.708);
+    background-blend-mode: multiply;
+}
+.scrapz_box{
+    background-image: url(/assets/images/scrapz_background.png);
+    background-color: rgba(0, 0, 0, 0.708);
+    background-blend-mode: multiply;
+}
 .corner-square {
     position: absolute;
     top: 5px;
@@ -32,7 +46,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-.box img {
+.imalive_box img, .tgb_box img, .scrapz_box img {
     width: 200px;
     height: auto;
     margin-right: 16px;
@@ -40,7 +54,7 @@
     border: 1px solid #ffffff69;
 }
 
-.box-link {
+.imalive_box-link, .tgb_box-link, .scrapz_box-link {
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -49,7 +63,7 @@
     max-width: 600px;
 
 }
-.box:hover{
+.imalive_box:hover, .tgb_box:hover, .scrapz_box:hover{
     background-color:rgba(0, 0, 0, 0.795);
     font-size: larger;
 }   
@@ -94,7 +108,7 @@ p2 {
         padding: 5px;
         margin-top: 80px;
     }
-    .box{
+    .imalive_box, .tgb_box, .scrapz_box{
         padding: 15px;
         border: 1px solid #ffffff33;
         height: 10rem;
@@ -102,7 +116,7 @@ p2 {
     h2 {
         font-size: 22px;
     }
-    .box img {
+    .imalive_box img, .tgb_box img, .scrapz_box img {
         width: 125px;
     }
     p1{

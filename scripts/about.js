@@ -84,5 +84,9 @@ function updateSize() {
         document.getElementById('box-container').insertBefore(me, document.getElementById("nothing"));
     }
 }  
+setTimeout(() => {
+    updateSize();
+}, 500); 
+
 window.addEventListener("resize", updateSize);
 updateSize();

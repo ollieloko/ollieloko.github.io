@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
     background-position: left;
     margin-top: 10px;
+    background-color: rgba(0,0,0,0.001); /* <<<< ADD THIS */
+    pointer-events: auto;
 }
 .nothing{
     display: none;
@@ -87,7 +89,6 @@ img {
         height: 180px;
         width: 125px;
         position: relative;
-        background-color: rgba(0,0,0,0.001); /* <<<< ADD THIS */
 
         background-size: cover;
 

@@ -43,8 +43,6 @@ p1{
         font-weight: 300;
         display: flex;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.541);
-        background-blend-mode: multiply;
         padding: 5px;
         margin: 0px;
         color: rgb(255, 255, 255);
@@ -268,7 +266,7 @@ img {
     }
     .container {
         width:100%;
-        margin-top: 75px;
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -299,6 +297,7 @@ img {
         font-family: aG_B;
 
     }
+    
     .audioContainer{
         display: flex;
         flex-direction: row;

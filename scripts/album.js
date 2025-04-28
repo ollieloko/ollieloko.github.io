@@ -66,7 +66,8 @@ fetch('/data/albumInfo.json')
       button.style.backgroundImage = `url(${video.image})`;  // Set the button background image
       button.style.backgroundSize = 'cover';  // Ensure the image covers the entire button
       button.style.backgroundPosition = 'center';  // Center the image
-
+      button.style.backgroundColor = "rgba(0, 0, 0, 0.541)";
+      button.style.backgroundBlendMode = "multiply";
       // Optionally, add a class or any additional styles to the button
       button.classList.add('music-video-button');
 
@@ -157,7 +158,11 @@ function openListenBar(){
   document.getElementById('listen').style.display = 'block';
   document.getElementById('info2').style.display = 'none';
   document.getElementById('listenButton').classList.toggle('active'); // Toggle 'active' class
-
+  window.scrollTo({
+    top: 200,
+    left: 0,
+    behavior: "smooth",
+  });
   listenBar = true;
 }
 function closeListenBar(){
@@ -172,7 +177,11 @@ function openMVbar(){
   document.getElementById('info2').style.display = 'none';
   document.getElementById('MVbutton').classList.toggle('active'); // Toggle 'active' class
   document.getElementById('MV').style.display = 'block';
-
+  window.scrollTo({
+    top: 200,
+    left: 0,
+    behavior: "smooth",
+  });
 
 }
 function closeMVbar(){
@@ -261,7 +270,7 @@ function updateSize() {
     document.getElementById('container').style.backgroundImage = bg;
   }
 }
-
+window.addEventListener("load", updateSize)
 window.addEventListener("resize", updateSize);
 updateSize();
 

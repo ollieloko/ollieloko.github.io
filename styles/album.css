@@ -203,7 +203,16 @@ p2{
     filter:sepia(100%);
     filter:brightness(80%)
 }
-
+img {
+    display: block;     /* So it acts like a <div> */
+    width: 100%;        /* Optional: fill parent */
+    height: auto;       /* Keeps aspect ratio (or set a fixed height) */
+    margin: 0;          /* Remove any margins */
+    padding: 0;         /* Remove padding */
+    border: 0;          /* Remove default border */
+    outline: none;      /* No outline */
+    background: none;   /* No background */
+}
 .listen{
     padding: 0px;
     margin: 5px;

@@ -8,7 +8,7 @@
     left: -12px;
     width: 65px;
     height: 65px;
-    background-image: url(/assets/images/NEW.gif); /* or any color you want */
+    background-image: url(assets/images/NEW.gif); /* or any color you want */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -196,7 +196,7 @@ p2{
     cursor: pointer;
     flex-shrink: 0;
     margin-right: 10px;
-    background-image: url(/assets/images/icons/play.svg)
+    background-image: url(assets/images/icons/play.svg)
   }
   
 .playButton:hover{
@@ -344,7 +344,7 @@ p2{
 
     }
     .arrow{
-        background-image: url(/assets/images/icons/arrow.svg);
+        background-image: url(assets/images/icons/arrow.svg);
         background-size: contain;
         width: 25px;
         height:25px;

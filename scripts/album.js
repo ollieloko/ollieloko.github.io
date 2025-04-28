@@ -229,10 +229,10 @@ document.getElementById('download').addEventListener('click', function() {
   document.getElementById('download').style.pointerEvents = "none";
   document.getElementById('dText').style.backgroundImage = "none";
 
-  document.getElementById('dText').textContent ="downloading..."
+  document.getElementById('dText').textContent ="downloading...please wait! :-)"
   document.getElementById('dText').style.fontSize = "1.2rem";
   document.getElementById('dText').style.border = "none";
-
+  document.getElementById('dText').style.fontFamily ="aG";
 
 
 })

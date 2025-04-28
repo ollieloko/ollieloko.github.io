@@ -1,0 +1,121 @@
+{
+    "I'M ALIVE! - album visua...": {
+        "year":"2023",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "made for my album 'I'M ALIVE!'.",
+        "info3" : "33 minutes and 34 seconds.",
+        "img" : "/assets/images/imaliveVis.gif",
+        "order" : 4,
+        "url" : "https://www.youtube.com/watch?v=z63ou1nCQgc"
+    },
+    "T.G.B - album visualizer": {
+        "year":"2025",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "made for my album 'THE GOODBYE BABY'.",
+        "info3" : "30 minutes and 33 seconds.",
+        "img" : "/assets/images/tgb_vis.gif",
+        "order" : 8,
+        "url" : "https://www.youtube.com/watch?v=XnnkFtFgwrA"
+    },
+    "SPACE ACADEMY SUPP...": {
+        "year":"2022",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "advertisement for Space Academy Supply CO.",
+        "info3" : "1 hour and 28 seconds.",
+        "img" : "/assets/images/sasc.gif",
+        "order" : 5,
+        "url" : "https://www.youtube.com/watch?v=XnnkFtFgwrA"
+    },
+    "GUAYAKI YERBA MATE (ad)": {
+        "year":"2023",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "made for Guayaki Yerba Mate.",
+        "info3" : "24 seconds.",
+        "img" : "/assets/images/yerbaAd.gif",
+        "order" : 6,
+        "url" : "https://www.youtube.com/watch?v=pQMWRA1hMZg"
+    },
+    "YESTERDAYZ": {
+        "year":"2022",
+        "info1" : "animation, vfx, music, everything by me.",
+        "info2" : "music video for my album 'I'M ALIVE!'. animation + film.",
+        "info3" : "3 minutes and 16 seconds.",
+        "img" : "/assets/images/yesterdayz.gif",
+        "order" : 11,
+        "url" : "https://www.youtube.com/watch?v=flSPSWgioYk"
+    },
+    "scrapz - album visualizer": {
+        "year":"2025",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "made for my album 'scrapz'. the scene changes over the hour.",
+        "info3" : "1 hour and 28 seconds.",
+        "img" : "/assets/images/scrapz_vis.gif",
+        "order" : 12,
+        "url" : "https://www.youtube.com/watch?v=flSPSWgioYk"
+    },
+    "ZF x BBC": {
+        "year":"2022",
+        "info1" : "animation, music by me.",
+        "info2" : "made for Billionare Boys Club + Zero Fatigue.",
+        "info3" : "26 seconds.",
+        "img" : "/assets/images/zf_bbc.gif",
+        "order" : 7,
+        "url" : "https://www.youtube.com/watch?v=qDIWeeiISRA"
+    },
+    "MLK DR": {
+        "year":"2021",
+        "info1" : "animation, visuals by me.",
+        "info2" : "made for Smino's MLK Dr.",
+        "info3" : "1 minute and 32 seconds.",
+        "img" : "/assets/images/mlkdr.gif",
+        "order" : 9,
+        "url" : "https://www.youtube.com/watch?v=AGscu-qCHh8"
+    },
+    "POLLY B": {
+        "year":"2023",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "promo for my album 'I'M ALIVE!'.",
+        "info3" : "58 seconds.",
+        "img" : "/assets/images/pollyB.gif",
+        "order" : 10,
+        "url" : "https://www.youtube.com/shorts/5nKOflwBDVc"
+    },
+    "SO HIGH (OUTRAGEOUS)": {
+        "year":"2023",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "music video for my album 'I'M ALIVE!'.",
+        "info3" : "2 minutes and 17 seconds.",
+        "img" : "/assets/images/sohigh.gif",
+        "order" : 14,
+        "url" : "https://www.youtube.com/watch?v=olLAv1_dLVk"
+    },
+    "I'M ALIVE!": {
+        "year":"2023",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "film for my album 'I'M ALIVE!'.",
+        "info3" : "2 minutes and 13 seconds.",
+        "img" : "/assets/images/imalive_anim.gif",
+        "order" : 13,
+        "url" : "https://www.youtube.com/watch?v=YL1zQaiPV6U"
+    },
+    "THE GOODBYE BABY": {
+        "year":"2025",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "film for my album 'THE GOODBYE BABY'.",
+        "info3" : "1 minute and 13 seconds.",
+
+        "img" : "/assets/images/tgb_anim.gif",
+        "order" : 15,
+        "url" : "https://www.youtube.com/watch?v=QsZTWSgIn8g"
+    },
+    "scrapz": {
+        "year":"NEW!",
+        "info1" : "animation, music, everything by me.",
+        "info2" : "film for my album 'scrapz'.",
+        "info3" : "1 minute.",
+        "img" : "/assets/images/scrapz_anim.gif",
+        "order" : 16,
+        "url" : "https://www.youtube.com/watch?v=ejN0WUjRF20"
+    }
+    
+}

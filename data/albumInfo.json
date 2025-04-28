@@ -1,0 +1,190 @@
+{
+  "album1": {
+    "name": "I'M ALIVE!",
+    "year": "2023",
+    "cover": "/assets/images/imalive_cover.jpg",
+    "background": "/assets/images/imalive_background.png",
+
+    "altCover": "images/imalive_tracklist.jpg",
+    "info1": "written, produced, performed, mix + master, art, all by OLLIE LOKO.",
+    "info2": "my debut album. recorded in Alameda from June 2022 - May 2023.",
+    "tracklist": [
+      "I'M OLLIE",
+      "SUPER SAIYAN 3",
+      "E-NUFF 4-U",
+      "LETTING GO",
+      "LIFE",
+      "GET OUT YER HEAD",
+      "(spawning)",
+      "SHIRT DIRT",
+      "SO HIGH (OUTRAGEOUS)",
+      "(chase and i on a boat)",
+      "CAT FOOD FREESTYLE",
+      "YESTERDAYZ",
+      "TRAVELING TO MARTINEZ",
+      "BEEN TOO LONG"
+    ],
+    "song": "/assets/audio/I'M ALIVE! (preview).mp3",
+    "download": "/assets/downloads/OLLIE LOKO - I'M ALIVE!.zip",
+    "streaming": [
+      {
+        "spotify": "https://open.spotify.com/album/413L58rUA90kcQUt9J2qOs?si=ZyVUFWM6ROeYvmhlif1Jtg",
+        "apple music": "https://music.apple.com/us/album/im-alive/1691414799",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_n24Zq1ph8-BsLctswhraL6iom8b0mMD5Q",
+        "soundcloud": "https://on.soundcloud.com/XTMRDTgQTTXnQpcb7",
+        "bandcamp": "https://ollieloko.bandcamp.com/album/im-alive"
+      }
+    ],
+  
+    "musicVideos": [
+      {
+        "name": "I'M ALIVE! (TRAILER)",
+        "link": "https://youtu.be/YL1zQaiPV6U?si=ByqiinYw2zPtQ_Kk",
+        "image": "/assets/images/imalive.gif"
+      },
+      {
+        "name": "SO HIGH (OUTRAGEOUS)",
+        "link": "https://youtu.be/olLAv1_dLVk?si=uVdtgYiarRjqums9",
+        "image": "/assets/images/sohigh.gif"
+      },
+      {
+        "name": "YESTERDAYZ",
+        "link": "https://youtu.be/zKHWb36cNmQ?si=FRHK_60j1O3CpOA_",
+        "image": "/assets/images/yesterdayz.gif"
+      },
+      {
+        "name": "I'M ALIVE! (ALBUM VISUALIZER)",
+        "link": "https://youtu.be/z63ou1nCQgc?si=wwthEqAnGnrBhZX5",
+        "image": "/assets/images/imaliveVis.gif"
+      }
+    ],
+    "nameSize": "45px",
+    "yearSize": "25px",
+    "tracklistSize": "14px",
+    "new" : false
+  },
+
+"album2": {
+    "name": "THE GOODBYE BABY",
+    "year": "2025",
+    "cover": "/assets/images/tgb_cover.jpg",
+    "background": "/assets/images/tgb_background.png",
+    "altCover": "/assets/images/tgb_tracklist.jpg",
+    "info1": "written, produced, performed, mix + master, art, all by OLLIE LOKO.",
+    "info2": "recorded in Alameda + Carmel Valley from Sep. 2023 - Dec. 2024.",
+    "tracklist": [
+    "THE GOODBYE BABY",
+    "SNEAKERS THE CAT",
+    "FLOWERS",
+    "THE VALLEY",
+    "HONK HONK",
+    "CHANGING",
+    "DREAM 506",
+    "HRT-BR8K",
+    "BABY CALL",
+    "THE RIVER",
+    "SUNSET IN ALAMEDA"
+    ],
+    "song": "/assets/audio/SNEAKERS THE CAT.mp3",
+    "download": "/assets/downloads/OLLIE LOKO - THE GOODBYE BABY.zip",
+    "streaming": [
+      {
+      "spotify": "https://open.spotify.com/album/5QqhL5kjwaCT3VBU6MYP0M",
+      "apple music": "https://music.apple.com/us/album/the-goodbye-baby/1790022854",
+      "youtube": "https://www.youtube.com/playlist?list=PLKm2Xlp4ZtR8IYhGdvTq5z1Iug77B1AqR",
+      "soundcloud": "https://soundcloud.com/ollieloko/sets/the-goodbye-baby",
+      "bandcamp": "https://ollieloko.bandcamp.com/album/the-goodbye-baby"
+      }
+    ],
+  
+    
+    "musicVideos": [
+      {
+        "name": "THE GOODBYE BABY",
+        "image": "/assets/images/tgb.gif",
+        "link": "https://youtu.be/QsZTWSgIn8g?si=jSjZKERAyXGVDHyt"
+      },
+      {
+        "name": "ALBUM FILM",
+        "image": "/assets/images/tgbVis.gif",
+        "link": "https://youtu.be/vPOp24IKRi8?si=UUIW6kfy2P4-GYH4"
+      }
+    ],
+    "nameSize": "40px",
+    "yearSize": "15px",
+    "tracklistSize": "14px",
+    "new":false
+  },
+
+  "album3": {
+    "name": "scrapz",
+    "year": "2025",
+    "background": "/assets/images/scrapz_background.png",
+    "cover": "/assets/images/scrapz_cover.png",
+    "altCover": "/assets/images/scrapz_tracklist.png",
+    "info1": "written, produced, performed, mix + master, art, all by OLLIE LOKO.",
+    "info2": "recorded in Alameda + Carmel Valley from Aug. 2023 - March 2025.",
+    "tracklist": [
+      "BUN BUN",
+      "KOROK",
+      "PASTA",
+      "SUNLIGHT",
+      "YAKKI",
+      "MOO MOO!",
+      "ORANGE KITTY",
+      "TOP OF THE MOUNTAIN",
+      "MONKEY EAT BANANA",
+      "BANANA SLUG",
+      "KOSHISHI MAYA PAPA",
+      "TONY PIZZA",
+      "HAPPY LITTLE GUY",
+      "APPLE SLUG",
+      "TAKE ME WIFF U",
+      "FAT ASS SANDWICH",
+      "BILL JIDEN",
+      "LITTLEST DOG",
+      "MEOW",
+      "BUBBLE TRAP",
+      "CABIN",
+      "BABI'S LAKEFRONT",
+      "RAINY",
+      "MU-MU DEPTHS",
+      "ALAMEDA",
+      "NOBODY",
+      "FALLING AWAY",
+      "2003",
+      "CLOCK",
+      "MINI MEOW",
+      "GOODNIGHT"
+    ],
+    "song": "/assets/audio/BANANA SLUG.mp3",
+    "download": "https://github.com/ollieloko/ollieloko-website/releases/download/1.0/OLLIE.LOKO.scrapz.zip",
+    "streaming": [
+      {
+        "spotify": "https://open.spotify.com/album/6gVneLBabBTwWz7HlhbnPw?si=fMYvN0wxQ6e26BN67uBxBQ",
+        "apple music": "https://music.apple.com/us/album/scrapz/1802551123",
+        "youtube": "https://www.youtube.com/playlist?list=PLKm2Xlp4ZtR9kmaDPM8YuL_-lbWS_i-EF",
+        "soundcloud": "https://on.soundcloud.com/NLaZHUxQDGxjZshc7",
+        "bandcamp": "https://ollieloko.bandcamp.com/album/scrapz"
+      }
+    ],
+  
+    
+    "musicVideos": [
+      {
+        "name": "scrapz",
+        "image": "/assets/images/scrapz.gif",
+        "link": "https://www.youtube.com/watch?v=ejN0WUjRF20"
+      },
+      {
+        "name": "album film",
+        "image": "/assets/images/album3Film.gif",
+        "link": "https://www.youtube.com/watch?v=flSPSWgioYk"
+      }
+    ],
+    "nameSize": "45px",
+    "yearSize": "25px",
+    "tracklistSize": "9.5px",
+    "new":true
+  }
+}

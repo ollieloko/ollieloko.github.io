@@ -1,0 +1,52 @@
+{
+    "FENDS": {
+        "year":"2022",
+        "img" : "/assets/images/illustrations/FENDS.jpg",
+        "order" : 1
+    },
+    "BUNNY": {
+        "year":"2022",
+        "img" : "/assets/images/illustrations/BUNNY.jpg",
+        "order" : 2
+    },
+    "TRYING": {
+        "year":"2022",
+        "img" : "/assets/images/illustrations/TRYING.jpg",
+        "order" : 4
+    },
+    "I'M ALIVE! (album cover)": {
+        "year":"2023",
+        "img" : "/assets/images/illustrations/IM_ALIVE_albumcover.jpg",
+        "order" : 5
+    },
+    "I'M ALIVE! (tracklist)": {
+        "year":"2023",
+        "img" : "/assets/images/illustrations/IM_ALIVE_tracklist.jpg",
+        "order" : 6
+    },
+    "SO HIGH (OUTRAGEOUS)": {
+        "year":"2023",
+        "img" : "/assets/images/illustrations/SO_HIGH.jpg",
+        "order" : 7
+    },
+    "CLASS TIME": {
+        "year":"2023",
+        "img" : "/assets/images/illustrations/CLASS_TIME.jpg",
+        "order" : 8
+    },
+    "BIG BABY ROOM": {
+        "year":"2023",
+        "img" : "/assets/images/illustrations/BIG_BABY_ROOM.jpg",
+        "order" : 9
+    },
+    "PRPL SHIRT": {
+        "year":"2023",
+        "img" : "/assets/images/illustrations/PRPL_SHIRT.jpg",
+        "order" : 10
+    },
+    "LOLA BATHROOM": {
+        "year":"2023",
+        "img" : "/assets/images/illustrations/LOLA_BATHROOM.jpg",
+        "order" : 11
+    }
+}

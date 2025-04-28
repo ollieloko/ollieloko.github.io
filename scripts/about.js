@@ -47,7 +47,7 @@ flower5.src = '/assets/audio/flower2.wav';
 
 flower.addEventListener("click", function() {
     console.log("flower clicked");
-    if (loadedB == true){
+        if (true){
         if (killed == false){
             killed = true
             document.getElementById('void').style.display = "block"

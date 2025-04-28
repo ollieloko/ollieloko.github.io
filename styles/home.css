@@ -45,23 +45,23 @@ body {
     -ms-transform: translate(-80%,-60%);
 }
 #guy{
-    background-image: url(..assets/images/guy/main.gif);
+    background-image: url(/assets/images/guy/main.gif);
 
 }
 #t{
-    background-image: url(..assets/images/guy/t.gif);
+    background-image: url(/assets/images/guy/t.gif);
     display: none;
 }
 #tm{
-    background-image: url(..assets/images/guy/tm.gif);
+    background-image: url(/assets/images/guy/tm.gif);
     display: none;
 }
 #bm{
-    background-image: url(..assets/images/guy/bm.gif);
+    background-image: url(/assets/images/guy/bm.gif);
     display: none;
 }
 #b{
-    background-image: url(..assets/images/guy/b.gif);
+    background-image: url(/assets/images/guy/b.gif);
     display: none;
 }
 #homeBG{
@@ -70,7 +70,7 @@ body {
     height: 350px;
     margin: auto;
     border-radius: 100%;
-    background-image: url(..assets/images/imalive_tracklist.jpg);
+    background-image: url(/assets/images/imalive_tracklist.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0);

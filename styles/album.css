@@ -274,8 +274,8 @@ img {
         justify-content: start;
         align-items: center;
         background-size: cover;
-        background-color: #000000d7;
-        background-blend-mode: multiply;
+        background-image: none;
+        background-color: none;
         padding-bottom: 25px;
         height: 1000px;
     }

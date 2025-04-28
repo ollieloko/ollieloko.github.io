@@ -52,7 +52,7 @@
 
 }
 .box:hover{
-    background-color: rgba(0, 0, 0, calc(var(--bGopacity)/1.2));
+    background-color:rgba(0, 0, 0, 0.795);
     font-size: larger;
 }   
 

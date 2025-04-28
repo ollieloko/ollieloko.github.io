@@ -28,6 +28,12 @@
 .scrapz-bg {
     background-image: url(/assets/images/scrapz_background.png);
   }
+  .tgb-bg {
+    background-image: url(/assets/images/tgb_background.png);
+  }
+  .imalive-bg {
+    background-image: url(/assets/images/imalive_background.png);
+  }
 .corner-square {
     position: absolute;
     top: 5px;

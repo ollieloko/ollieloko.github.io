@@ -84,9 +84,10 @@ function updateSize() {
         document.getElementById('box-container').insertBefore(me, document.getElementById("nothing"));
     }
 }  
-setTimeout(() => {
-    updateSize();
-}, 500); 
+window.addEventListener("load", function() {
+    updateSize(); // Now layout is fully ready
+});
+window.addEventListener("load", updateSize);
 
 window.addEventListener("resize", updateSize);
 updateSize();

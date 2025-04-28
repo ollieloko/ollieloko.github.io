@@ -87,6 +87,7 @@ img {
         height: 180px;
         width: 125px;
         position: relative;
+        background-color: rgba(0,0,0,0.001); /* <<<< ADD THIS */
 
         background-size: cover;
 

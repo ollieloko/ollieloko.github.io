@@ -1,5 +1,5 @@
 let flower = document.getElementById('flower');
-killed = false
+let killed = false
 let me = document.getElementById('me');
 let left = document.getElementById('left');
 let right = document.getElementById('right');

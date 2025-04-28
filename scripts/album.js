@@ -225,7 +225,17 @@ document.getElementById('MVbutton').addEventListener('click', function() {
     closeMVbar()
   }
 })
+document.getElementById('download').addEventListener('click', function() {
+  document.getElementById('download').style.pointerEvents = "none";
+  document.getElementById('dText').style.backgroundImage = "none";
 
+  document.getElementById('dText').textContent ="downloading..."
+  document.getElementById('dText').style.fontSize = "1.2rem";
+  document.getElementById('dText').style.border = "none";
+
+
+
+})
 document.getElementById('cover').addEventListener('click', function() {
   if (altCover && albumClicked == false) {
     this.style.backgroundImage = `url(${altCover})`;  // Switch to alt cover

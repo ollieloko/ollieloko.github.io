@@ -61,6 +61,7 @@
     "nameSize": "45px",
     "yearSize": "25px",
     "tracklistSize": "14px",
+    "mobileHeight": "930px",
     "new" : false
   },
 
@@ -113,6 +114,7 @@
     "nameSize": "27px",
     "yearSize": "15px",
     "tracklistSize": "14px",
+    "mobileHeight": "900px",
     "new":false
   },
 
@@ -185,6 +187,7 @@
     "nameSize": "45px",
     "yearSize": "25px",
     "tracklistSize": "9.5px",
+    "mobileHeight": "980px",
     "new":true
   }
 }

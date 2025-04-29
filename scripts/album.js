@@ -70,7 +70,7 @@ fetch('/data/albumInfo.json')
       button.style.backgroundImage = `url(${video.image})`;  // Set the button background image
       button.style.backgroundSize = 'cover';  // Ensure the image covers the entire button
       button.style.backgroundPosition = 'center';  // Center the image
-   
+      
       // Optionally, add a class or any additional styles to the button
       button.classList.add('music-video-button');
 
@@ -113,12 +113,13 @@ fetch('/data/albumInfo.json')
   document.getElementById("audio").load();
   const fileName = albumSong.split('/').pop().replace(/\.[^/.]+$/, "");
   document.getElementById("songName").innerText = fileName;
-
+  document.getElementById("container").style.height = albumData.mobileHeight;
   document.getElementById("infoLine1").innerText = `${info1}`;
   document.getElementById("infoLine2").innerText = `${info2}`;
 
   document.getElementById("download").href = download;
 
+  
   if (Array.isArray(tracklist)) {
     const container = document.getElementById("tracklist");
     container.innerHTML = "";

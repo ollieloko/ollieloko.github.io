@@ -17,7 +17,24 @@
     background-position: center;
     display: none;
 }
+.load {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it exactly */
 
+    width: 65px;
+    
+    height: 65px;
+    background-image: url(/assets/images/icons/loading2.gif); /* or any color you want */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    transform: translate(-50%, -50%); /* Center it exactly */
+
+}
 .imgContent{
     position: relative;
 }
@@ -299,6 +316,7 @@ img {
         padding-bottom: 100%;        
         background-size:cover;
     }
+    
     .button{
         width: 260px;
         font-size: 1.1rem;
@@ -383,11 +401,10 @@ img {
         margin-left: 50px;
         margin-bottom: 25px;
     }
-    .albumCover {
+    .albumCover{
 
         width: 95%;
         aspect-ratio: 1 / 1;
-
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -397,8 +414,9 @@ img {
         filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.438));
         cursor: pointer;
 
-
+        position: relative;
     }
+    
     
     .imgContent{
         display: flex;

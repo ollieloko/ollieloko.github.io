@@ -48,7 +48,29 @@ fetch('/data/albumInfo.json')
     document.getElementById('container').style.backgroundImage = bg;
 
   }
-  
+    const loadDiv = document.querySelector('.load');
+    
+    const img1 = new Image();
+    const img2 = new Image();
+
+    let loadedCount = 0;
+
+    function imageLoaded() {
+        loadedCount++;
+        if (loadedCount === 2) {
+            // Both images are loaded
+            if (loadDiv) {
+                loadDiv.style.display = 'none';
+            }
+        }
+    }
+
+    img1.onload = imageLoaded;
+    img2.onload = imageLoaded;
+
+    // Set the image sources
+    img1.src = cover;
+    img2.src = altCover;
  
   document.getElementById("name").style.fontSize = albumData.nameSize;
 

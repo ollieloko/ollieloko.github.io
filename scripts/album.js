@@ -2,7 +2,7 @@ const audioScript = document.createElement('script');
 audioScript.src = '/scripts/audioPlayer.js';  
 audioScript.type = 'text/javascript';
 audioScript.defer = true; 
-
+let mobileH = "980px";
 document.head.appendChild(audioScript);
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -113,10 +113,9 @@ fetch('/data/albumInfo.json')
   document.getElementById("audio").load();
   const fileName = albumSong.split('/').pop().replace(/\.[^/.]+$/, "");
   document.getElementById("songName").innerText = fileName;
-  document.getElementById("container").style.height = albumData.mobileHeight;
   document.getElementById("infoLine1").innerText = `${info1}`;
   document.getElementById("infoLine2").innerText = `${info2}`;
-
+  mobileH = albumData.mobileHeight;
   document.getElementById("download").href = download;
 
   
@@ -267,18 +266,26 @@ document.getElementById('albumAlt').addEventListener('click', function(){
 function updateSize() {
   if (window.innerWidth < 680) {
     mobile = true; 
+    document.getElementById("container").style.height = mobileH;
+
     document.getElementById('container').style.backgroundImage = "none";
 
   }
   if (window.innerWidth >680){
     mobile = false;
+    document.getElementById("container").style.height = "auto";
+
     document.getElementById('container').style.backgroundImage = bg;
   }
 }
 window.addEventListener("load", updateSize);
 window.addEventListener("resize", updateSize);
 updateSize();
-
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    updateSize()
+  }, 100); // waits 100 milliseconds after DOM is loaded
+});
 
 
 ;

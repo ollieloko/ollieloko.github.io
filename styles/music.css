@@ -11,6 +11,7 @@
 
 .box {
     display: flex;
+    position: relative;
     align-items: center;
     border: 1px solid #ffffffac;
     border-radius: 8px;
@@ -63,7 +64,7 @@
 
 }
 .box:hover{
-    background-color:rgba(0, 0, 0, 0.795);
+    background-color:rgba(0, 0, 0, 0.72);
     font-size: larger;
 }   
 

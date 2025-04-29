@@ -6,22 +6,19 @@
     background-repeat: no-repeat;
     background-position: left;
     margin-top: 10px;
-    background-color: rgba(0,0,0,0.001); /* <<<< ADD THIS */
+    background-color: rgba(0,0,0,0.001); 
     pointer-events: auto;
     border: none;
     touch-action: manipulation;
-
 }
 .me{
     border: none;
-
 }
 .touch-fix {
     position: relative;
     width: 100%;
     height: 100%;
-    pointer-events: auto; /* Explicitly allow clicks/touch */
-
+    pointer-events: auto; 
 }
 .nothing{
     display: none;
@@ -49,7 +46,6 @@
     opacity: 0;
     transition: all 2s ease-in-out;
     pointer-events: none;
-
 }
 img {
     display: block;     /* So it acts like a <div> */
@@ -79,14 +75,12 @@ img {
         margin-bottom: 15px;
         background-position: top;
         pointer-events: auto !important; /* ❗ make the container itself non-blocking */
-
     }
     .left{
         width: 95%;
         margin: auto;
         z-index: 0;
         pointer-events: auto; /* ❗ allow clicks inside */
-
     }
     h2{
         font-size: 50px;
@@ -111,11 +105,9 @@ img {
         background-size: cover;
         pointer-events: auto; /* Ensure it's clickable on mobile */
         cursor: pointer; /* Show pointer cursor for mobile */
-
     }
     p2{
         margin-bottom: 25px;
-    
     }
     p3{
         font-size: 20px;
@@ -125,7 +117,6 @@ img {
     .email{
         margin-top: 15px;
     }
-    
 }
 @media all and (min-width:681px) {
 

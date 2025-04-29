@@ -60,19 +60,19 @@ fetch('/data/albumInfo.json')
       const anchor = document.createElement('a');
       anchor.href = video.link; // Set the link to the video URL
       anchor.target = '_blank';
-
+      const buttonText = document.createElement('p');
       const button = document.createElement('button');  // Create a new button element
-      button.textContent = video.name;  // Set the button's text to the music video name
+      buttonText.textContent = video.name;  // Set the button's text to the music video name
       button.style.backgroundImage = `url(${video.image})`;  // Set the button background image
       button.style.backgroundSize = 'cover';  // Ensure the image covers the entire button
       button.style.backgroundPosition = 'center';  // Center the image
-      button.style.backgroundColor = "rgba(0, 0, 0, 0.541)";
-      button.style.backgroundBlendMode = "multiply";
+   
       // Optionally, add a class or any additional styles to the button
       button.classList.add('music-video-button');
 
       // Append the button to the MV container
       anchor.appendChild(button);
+      button.appendChild(buttonText);
 
       // Append the anchor (with button) to the MV container
       mvContainer.appendChild(anchor);

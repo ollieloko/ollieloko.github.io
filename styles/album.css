@@ -13,12 +13,11 @@
     background-repeat: no-repeat;
     background-position: center;
     display: none;
+}
 
-  }
-
-  .imgContent{
+.imgContent{
     position: relative;
-  }
+}
 .info2 {
     position: relative;
 }
@@ -51,9 +50,18 @@ p1{
         text-align: left;
         border: 1px solid rgba(255, 255, 255, 0.363);
         height: 75px;
+        
+        p{
+            background-color: rgba(0, 0, 0, 0.662);
+            color: rgb(255, 255, 255);
+            width: fit-content;
+            padding: 5px;
+            border-radius: 3px;
+        }
     }
     button:hover{
-        background-color: rgba(0, 0, 0, 0.37);
+        background-color: rgba(241, 241, 241, 0.171);
+        background-blend-mode: lighten;
         color: white;
         cursor: pointer;
     

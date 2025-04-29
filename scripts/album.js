@@ -168,12 +168,16 @@ function openListenBar(){
     behavior: "smooth",
   });
   listenBar = true;
+  if (mobile == true){
+    document.getElementById('footer').style.visibility = 'hidden';
+  }
 }
 function closeListenBar(){
   document.getElementById('listen').style.display = 'none';
   document.getElementById('info2').style.display = 'block';
   listenBar = false;
   document.getElementById('listenButton').classList.toggle('active'); // Toggle 'active' class
+  document.getElementById('footer').style.visibility = 'visible';
 
 }
 function openMVbar(){
@@ -186,13 +190,16 @@ function openMVbar(){
     left: 0,
     behavior: "smooth",
   });
-
+  if (mobile == true){
+    document.getElementById('footer').style.visibility = 'hidden';
+  }
 }
 function closeMVbar(){
   MVbar = false;
   document.getElementById('info2').style.display = 'block';
   document.getElementById('MVbutton').classList.toggle('active'); // Toggle 'active' class
   document.getElementById('MV').style.display = 'none';
+  document.getElementById('footer').style.visibility = 'visible';
 
 }
 document.getElementById('listenButton').addEventListener('click', function() {

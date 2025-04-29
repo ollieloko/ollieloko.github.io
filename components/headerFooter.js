@@ -69,7 +69,7 @@ window.addEventListener("load", ()=>{
 class FooterMain extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <footer>
+            <footer id="footer">
             
             <link rel="stylesheet" href="components/footer.css">
 

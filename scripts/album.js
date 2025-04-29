@@ -159,7 +159,7 @@ function openListenBar(){
   document.getElementById('info2').style.display = 'none';
   document.getElementById('listenButton').classList.toggle('active'); // Toggle 'active' class
   window.scrollTo({
-    top: 200,
+    top: 400,
     left: 0,
     behavior: "smooth",
   });
@@ -178,7 +178,7 @@ function openMVbar(){
   document.getElementById('MVbutton').classList.toggle('active'); // Toggle 'active' class
   document.getElementById('MV').style.display = 'block';
   window.scrollTo({
-    top: 200,
+    top: 400,
     left: 0,
     behavior: "smooth",
   });

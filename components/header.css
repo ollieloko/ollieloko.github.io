@@ -3,6 +3,8 @@ header{
      
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+
 }
 .right {
     display: flex;

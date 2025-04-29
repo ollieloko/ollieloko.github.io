@@ -31,6 +31,10 @@ html {
     font-family: aG;
     width: 100%;
 }
+body{
+    overflow-x: hidden;
+
+}
 .circles {
     position: absolute; 
     top: 0;

@@ -266,7 +266,8 @@ document.getElementById('albumAlt').addEventListener('click', function(){
 function updateSize() {
   if (window.innerWidth < 680) {
     mobile = true; 
-    document.getElementById("container").style.height = mobileH;
+    const height1 = mobileH*1.2 + (window.innerWidth-680);
+    document.getElementById("container").style.height = `${height1}px`;
 
     document.getElementById('container').style.backgroundImage = "none";
 

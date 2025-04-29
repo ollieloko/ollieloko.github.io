@@ -3,8 +3,7 @@ header{
      
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-
+    overflow: hidden;
 }
 .right {
     display: flex;
@@ -75,6 +74,8 @@ pointer-events: none; /* makes sure it doesn't block scroll or clicks */
         top: 0;
         z-index: 5;
         transform: translate(-7px, 0px);
+        overflow: hidden;
+
     }
     .menuLogo{
         width: 75px;

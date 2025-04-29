@@ -2,6 +2,9 @@
 .listen{
     display: none;
 }
+.albumCover{
+    background-color: black;
+}
 .corner-square {
     position: absolute;
     top: -25px;
@@ -396,6 +399,7 @@ img {
 
 
     }
+    
     .imgContent{
         display: flex;
         justify-content: flex-start;

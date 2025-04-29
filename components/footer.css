@@ -19,7 +19,3 @@ footer{
     background-color: rgba(0, 0, 0, 0.726);
     background-blend-mode: multiply;
 }
-html, body{
-    overflow-x: hidden;
-    width: 100%;
-}

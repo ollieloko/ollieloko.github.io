@@ -18,10 +18,7 @@ display: none;
 pointer-events: none; /* makes sure it doesn't block scroll or clicks */
 
 }
-html, body{
-    overflow-x: hidden;
-    width: 100%;
-}
+
 .menuButton {
     font-size: 25px;
     cursor: pointer;

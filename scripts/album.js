@@ -44,7 +44,11 @@ fetch('/data/albumInfo.json')
   altCover = albumData.altCover;
 
   bg = `url(${albumData.background})`;
+  if (window.innerWidth > 680) {
+    document.getElementById('container').style.backgroundImage = bg;
 
+  }
+  
  
   document.getElementById("name").style.fontSize = albumData.nameSize;
 
@@ -270,7 +274,7 @@ function updateSize() {
     document.getElementById('container').style.backgroundImage = bg;
   }
 }
-window.addEventListener("load", updateSize)
+window.addEventListener("load", updateSize);
 window.addEventListener("resize", updateSize);
 updateSize();
 

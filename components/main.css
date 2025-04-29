@@ -35,7 +35,7 @@ body{
     overflow-x: hidden;
 }
 .circles {
-    position: absolute; 
+    position: relative; 
     top: 0;
     left: 0;
     width: 100%;
@@ -145,7 +145,7 @@ body{
 }
 
 .circles2 {
-    position: absolute; 
+    position: relative; 
     top: 0;
     left: 0;
     width: 98%;

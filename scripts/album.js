@@ -208,24 +208,26 @@ document.getElementById('listenButton').addEventListener('click', function() {
 })
 
 document.getElementById('cover').addEventListener('mouseover', function() {
-
+if (mobile == false){
   if (listenBar ==true){
     closeListenBar()
   }
   if (MVbar ==true){
     closeMVbar()
   }
-
+}
 });
 
 document.getElementById('container').addEventListener('mouseleave', function() {
+  if (mobile == false){
+
     if (listenBar ==true){
       closeListenBar()
     }
     if (MVbar ==true){
       closeMVbar()
     }
-
+  }
 })
 
 document.getElementById('MVbutton').addEventListener('click', function() {

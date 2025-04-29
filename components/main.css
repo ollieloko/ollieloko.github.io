@@ -54,6 +54,7 @@ body{
     height: 20px;
     background-image: url(../assets/images/flowee.svg);
     animation: flowers1 25s linear infinite forwards;
+    overflow-x: hidden;
 
     bottom: -150px;
     background-size: contain;
@@ -166,6 +167,8 @@ body{
     bottom: -150px;
     background-size: contain;
     pointer-events: none;
+    overflow-x: hidden;
+
 }
 
 .circles2 li:nth-child(1) {
@@ -329,6 +332,8 @@ a {
     background-color: black;
     z-index: 5;
     transition: all 0.1s ease-out;
+    overflow-x: hidden;
+
 }
 .loader-hidden{
     opacity: 0;

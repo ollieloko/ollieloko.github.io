@@ -282,8 +282,9 @@ img {
         background: none; /* REMOVE background image and color */
         background-color: transparent;
         background-image: none;
-        backdrop-filter: none;        padding-bottom: 25px;
-        height: 1000px;
+        backdrop-filter: none;        
+        padding-bottom: 25px;
+        height: 900px;
     }
     
     .albumCover{

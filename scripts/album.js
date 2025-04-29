@@ -48,29 +48,7 @@ fetch('/data/albumInfo.json')
     document.getElementById('container').style.backgroundImage = bg;
 
   }
-    const loadDiv = document.querySelector('.load');
     
-    const img1 = new Image();
-    const img2 = new Image();
-
-    let loadedCount = 0;
-
-    function imageLoaded() {
-        loadedCount++;
-        if (loadedCount === 2) {
-            // Both images are loaded
-            if (loadDiv) {
-                loadDiv.style.display = 'none';
-            }
-        }
-    }
-
-    img1.onload = imageLoaded;
-    img2.onload = imageLoaded;
-
-    // Set the image sources
-    img1.src = cover;
-    img2.src = altCover;
  
   document.getElementById("name").style.fontSize = albumData.nameSize;
 
@@ -131,7 +109,7 @@ fetch('/data/albumInfo.json')
   document.getElementById("year").innerText = `(${albumYear})`;
   document.getElementById("song").src = albumSong;
   document.getElementById("cover").style.backgroundImage = `url(${cover})`;
-
+  document.getElementById("albumAlt").style.backgroundImage = `url(${altCover})`;
   document.getElementById("audio").load();
   const fileName = albumSong.split('/').pop().replace(/\.[^/.]+$/, "");
   document.getElementById("songName").innerText = fileName;
@@ -273,16 +251,16 @@ document.getElementById('download').addEventListener('click', function() {
 })
 document.getElementById('cover').addEventListener('click', function() {
   if (altCover && albumClicked == false) {
-    this.style.backgroundImage = `url(${altCover})`;  // Switch to alt cover
+    document.getElementById('albumAlt').style.visibility = "visible";
+
     albumClicked = true;  // Mark as clicked
-    console.log('Switched to altCover');
   } 
-  else if (cover && albumClicked == true) {
-    this.style.backgroundImage = `url(${cover})`;  // Switch back to original cover
-    albumClicked = false;  // Reset click state
-    console.log('Switched back to cover');
-  }
+  
 });
+document.getElementById('albumAlt').addEventListener('click', function(){
+  document.getElementById('albumAlt').style.visibility = "hidden";
+  albumClicked = false;  // Reset click state
+})
 
 
 function updateSize() {

@@ -14,7 +14,14 @@
         color: rgba(255, 255, 255, 0.644);
     }
 }
-
+.albumAlt {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image covers without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .nameContainer.selected{
     background-color: rgba(255, 121, 210, 0.486);
 }

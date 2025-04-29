@@ -3,7 +3,29 @@
     display: none;
 }
 .albumCover{
-    background-color: black;
+
+    width: 95%;
+    aspect-ratio: 1 / 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+    margin: 5px;
+    outline: 1px solid #ffffff31;
+    filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.438));
+    cursor: pointer;
+    overflow: hidden; /* Important to clip image */
+    border: none;
+    position: relative;
+}
+.albumAlt {
+    width: 95%;
+    object-fit: cover; /* Makes sure the image covers without distortion */
+    position: absolute;
+    background-size: contain;
+    aspect-ratio: 1 / 1;
+    border : none;
+    visibility: hidden;
 }
 .corner-square {
     position: absolute;
@@ -16,27 +38,17 @@
     background-repeat: no-repeat;
     background-position: center;
     display: none;
+    z-index: 1;
 }
-.load {
-    position: absolute;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center it exactly */
 
-    width: 65px;
-    
-    height: 65px;
-    background-image: url(/assets/images/icons/loading2.gif); /* or any color you want */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    transform: translate(-50%, -50%); /* Center it exactly */
-
-}
 .imgContent{
+    display: flex;
+    border: none;
     position: relative;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 .info2 {
     position: relative;
@@ -307,15 +319,8 @@ img {
         height: 980px;
     }
     
-    .albumCover{
-        margin: 5px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        width: 97%;
-        padding-bottom: 100%;        
-        background-size:cover;
-    }
+    
+    
     
     .button{
         width: 260px;
@@ -401,22 +406,10 @@ img {
         margin-left: 50px;
         margin-bottom: 25px;
     }
-    .albumCover{
+    .albumAlt{
+        transform: translate(5px, -0px);
 
-        width: 95%;
-        aspect-ratio: 1 / 1;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-clip: content-box;
-        margin: 5px;
-        outline: 1px solid #ffffff31;
-        filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.438));
-        cursor: pointer;
-
-        position: relative;
     }
-    
     
     .imgContent{
         display: flex;

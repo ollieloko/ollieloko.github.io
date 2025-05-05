@@ -48,7 +48,7 @@ fetch('/data/albumInfo.json')
     document.getElementById('container').style.backgroundImage = bg;
 
   }
-  window.location.href = "ollieloko.com" + albumName;
+  window.location.href = albumName;
 
  
   document.getElementById("name").style.fontSize = albumData.nameSize;

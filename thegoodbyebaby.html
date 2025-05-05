@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title></title>
+  <link rel="stylesheet" href="/styles/album.css">
+  <link rel="stylesheet" href="/components/main.css">
+  <link rel="icon" href="/assets/images/icons/favicon.svg">
+
+</head>
+
+<body data-album-num="2"> <!-- change number per album -->
+    <div class="background"></div>
+    <div class="page-content">
+
+      <menu-header></menu-header>
+        <div class ="album-wrapper"id="album-wrapper"> 
+        <main>
+          <div class="container" id="container">
+            <div class ="containerContent">
+              <div class="imgContent"><img class="albumCover" id="cover">
+                <div class="corner-square" id="corner-square"></div>
+                <img class="albumAlt" id="albumAlt">
+
+              </img></div>
+              <div class="info" id="info">
+
+                <div class="albumTitle">
+                  <h2 id="name"></h2>
+                  <p1 id="year"></p1>
+                </div>
+
+                <h3>by OLLIE LOKO</h3>
+
+                <div class="buttons">
+                  <div class="button" id="listenButton">LISTEN</div>
+                  <div class="button" id = "MVbutton">MUSIC VIDEOS</div>
+                </div>
+
+                <div class ="MV" id="MV">
+                </div>
+
+                <div class ="listen" id="listen">
+                  <div class ="streaming" id="streaming">
+                    
+                  </div>
+                  <a id="download" href="" download="">
+
+                  <p2 id="dText">DOWNLOAD</p2>
+                </a>
+
+                </div>
+                <div class ="info2" id="info2">
+                  <p2 id="infoLine1"></p2>
+                  <br>
+                  <p2 id="infoLine2"></p2>
+
+                  <audio id="audio" preload="metadata">
+                    <source id = "song" src="" type="audio/mpeg">
+                  </audio>
+
+                  <div class = "audioContainer">
+                    <div class="leftA">
+                      <div class="playButton" id="playPauseBtn" onclick="playPause()";></div>
+                      <p id="songName"></p>
+                    </div>
+                    <div class="rightA">
+
+                      <p>(</p>
+                      <p class="current-time">0:00</p>
+                      <p>/</p>
+                      <p class="duration-time">0:00</span>
+                      <p>)</p>
+
+                    </div>
+                  </div>
+                <div id = "tracklist"class="tracklist">
+                  
+                </div>
+              </div>
+        </div>
+      </div>
+
+        </main>
+          <div class="bottom">
+            <a href="music.html">
+            <div class="musicMenu">
+              <div class="arrow"></div>
+              MUSIC
+            </div>
+          </a>
+          </div>
+        </div>
+        <footer-main></footer-main>
+
+    </div>
+  </div>
+<div class="loader" id="loader"></div>
+<script src="/components/headerFooter.js"></script>
+<script src="/scripts/album.js"></script>
+
+</body>
+
+
+
+</html>

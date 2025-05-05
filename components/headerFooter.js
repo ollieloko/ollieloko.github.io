@@ -115,3 +115,6 @@ class FooterMain extends HTMLElement {
 customElements.define('footer-main', FooterMain)
 
 
+  if (window.location.href.endsWith(".html")) {
+    window.location.href = window.location.href.replace(".html", "");
+  }

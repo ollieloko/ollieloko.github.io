@@ -10,7 +10,7 @@ class MenuHeader extends HTMLElement {
             <link rel="stylesheet" href="components/header.css">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <div class="mobMenu"></div>
-            <a href="index.html">
+            <a href="/">
 
             <div class="menuLogo" id="menuLogo"></div>
             </a>

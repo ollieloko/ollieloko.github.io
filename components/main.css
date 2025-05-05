@@ -367,6 +367,7 @@ a {
     opacity: 0.04;
     animation: grain 0.7s steps(4) infinite;
     pointer-events: none;
+    mix-blend-mode: overlay;
 }
 @keyframes grain {
     0%, 100% {transform: translate(0,0);}

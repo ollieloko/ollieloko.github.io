@@ -48,7 +48,6 @@ fetch('/data/albumInfo.json')
     document.getElementById('container').style.backgroundImage = bg;
 
   }
-  window.location.href = albumName;
 
  
   document.getElementById("name").style.fontSize = albumData.nameSize;
@@ -294,6 +293,8 @@ window.addEventListener("resize", updateSize);
 updateSize();
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
+    window.location.href = "ollieloko.com" + albumName;
+
     updateSize()
   }, 100); // waits 100 milliseconds after DOM is loaded
 });

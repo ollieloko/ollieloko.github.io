@@ -90,4 +90,3 @@ window.addEventListener("load", ()=>{
       }, 200); // 0.5 seconds
 })
 
-window.location.href = window.location.href.replace("index.html", "");

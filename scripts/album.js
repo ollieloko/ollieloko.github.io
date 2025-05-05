@@ -49,7 +49,7 @@ fetch('/data/albumInfo.json')
 
   }
 
- 
+  updateURL(albumName);
   document.getElementById("name").style.fontSize = albumData.nameSize;
 
   document.getElementById("year").style.fontSize = albumData.yearSize;
@@ -287,14 +287,17 @@ function updateSize() {
 
     document.getElementById('container').style.backgroundImage = bg;
   }
+} 
+
+function updateURL(url){
+  window.location.href = url;
+
 }
 window.addEventListener("load", updateSize);
 window.addEventListener("resize", updateSize);
 updateSize();
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
-    window.location.href = "ollieloko.com" + albumName;
-
     updateSize()
   }, 100); // waits 100 milliseconds after DOM is loaded
 });

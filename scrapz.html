@@ -11,16 +11,27 @@
   <div id="album-container"></div>
 
   <script>
-    // Load the HTML template
+    // Load the HTML template (album_t.html)
     fetch('/album_t.html')
       .then(res => res.text())
       .then(html => {
-        document.getElementById('album-container').innerHTML = html.body;
-        // Then load your JS once the template is in
+        // Create a temporary div to parse the HTML string
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+        
+        // Grab only the content inside <body> from the template
+        const bodyContent = tempDiv.querySelector('body').innerHTML;
+        
+        // Insert the body content into your current page's album-container
+        document.getElementById('album-container').innerHTML = bodyContent;
+  
+        // Then load your JS after the content has been injected
         const script = document.createElement('script');
         script.src = '/scripts/album.js';
         document.body.appendChild(script);
-      });
+      })
+      .catch(err => console.error('Error loading album template:', err));
   </script>
+  
 </body>
 </html>

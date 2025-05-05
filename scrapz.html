@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>scrapz</title>
+  <link rel="stylesheet" href="/styles/album.css">
+  <link rel="stylesheet" href="/components/main.css">
+  <link rel="icon" href="/assets/images/icons/favicon.svg">
+</head>
+
+<body data-album-num="3"> <!-- album number here -->
+  <div id="album-container"></div>
+
+  <script>
+    // Load the HTML template
+    fetch('/album_t.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('album-container').innerHTML = html;
+        // Then load your JS once the template is in
+        const script = document.createElement('script');
+        script.src = '/scripts/album.js';
+        document.body.appendChild(script);
+      });
+  </script>
+</body>
+</html>

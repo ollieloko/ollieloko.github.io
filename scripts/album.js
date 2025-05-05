@@ -5,9 +5,7 @@ audioScript.defer = true;
 let mobileH = "980px";
 document.head.appendChild(audioScript);
 
-const urlParams = new URLSearchParams(window.location.search);
-const albumNum = urlParams.get('album');
-document.body.dataset.albumNum = albumNum;
+const albumNum = document.body.dataset.albumNum;
 
 const albumId = "album" + albumNum + "_";
 let listenBar = false;
@@ -18,6 +16,8 @@ let mobile = false;
 let MVbar = false;
 let albumClicked = false;
 let bg = "";
+
+
 
 fetch('/data/albumInfo.json')
 .then(response => response.json())

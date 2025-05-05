@@ -49,7 +49,6 @@ fetch('/data/albumInfo.json')
 
   }
 
-  updateURL(albumName);
   document.getElementById("name").style.fontSize = albumData.nameSize;
 
   document.getElementById("year").style.fontSize = albumData.yearSize;
@@ -289,10 +288,6 @@ function updateSize() {
   }
 } 
 
-function updateURL(url){
-  window.location.href = url;
-
-}
 window.addEventListener("load", updateSize);
 window.addEventListener("resize", updateSize);
 updateSize();

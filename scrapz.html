@@ -15,7 +15,7 @@
     fetch('/album_t.html')
       .then(res => res.text())
       .then(html => {
-        document.getElementById('album-container').innerHTML = html;
+        document.getElementById('album-container').innerHTML = html.body;
         // Then load your JS once the template is in
         const script = document.createElement('script');
         script.src = '/scripts/album.js';

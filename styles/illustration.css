@@ -8,9 +8,7 @@
 .page-content.overlay{
     filter: blur(15px);
 }
-.year.new{
-    color: yellow;
-}
+
 #overlay {
     position: fixed;
     display: none;
@@ -53,7 +51,12 @@
     background-color: rgba(255, 255, 255, 0.178);
     cursor: pointer;
 }
+.nameContainer{
 
+.year.new{
+    color: yellow;
+}
+}
 .fullS{
     width: 50px;
     height: 50px;

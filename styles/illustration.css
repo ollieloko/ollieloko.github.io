@@ -8,6 +8,9 @@
 .page-content.overlay{
     filter: blur(15px);
 }
+.year.new{
+    color: yellow;
+}
 #overlay {
     position: fixed;
     display: none;

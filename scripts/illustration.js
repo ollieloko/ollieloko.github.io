@@ -26,7 +26,9 @@ fetch('data/illustrationInfo.json')
     const container = document.createElement('div');
     const illName = document.createElement('div');
     const year = document.createElement('div');
-
+if (illustration.year == "NEW!"){
+      year.classList.add('new');
+    }
     illName.textContent = illusKey;
     year.textContent = `(${illustration.year})`;
     

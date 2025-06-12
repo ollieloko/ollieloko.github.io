@@ -17,15 +17,7 @@
         "order" : 8,
         "url" : "https://www.youtube.com/watch?v=XnnkFtFgwrA"
     },
-    "SPACE ACADEMY SUPP...": {
-        "year":"2022",
-        "info1" : "animation, music, everything by me.",
-        "info2" : "advertisement for Space Academy Supply CO.",
-        "info3" : "1 hour and 28 seconds.",
-        "img" : "/assets/images/sasc.gif",
-        "order" : 5,
-        "url" : "https://www.youtube.com/watch?v=XnnkFtFgwrA"
-    },
+    
     "GUAYAKI YERBA MATE (ad)": {
         "year":"2023",
         "info1" : "animation, music, everything by me.",
@@ -109,7 +101,7 @@
         "url" : "https://www.youtube.com/watch?v=QsZTWSgIn8g"
     },
     "scrapz": {
-        "year":"2025",
+        "year":"NEW!",
         "info1" : "animation, music, everything by me.",
         "info2" : "film for my album 'scrapz'.",
         "info3" : "1 minute.",

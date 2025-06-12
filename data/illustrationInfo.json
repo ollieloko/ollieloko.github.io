@@ -48,5 +48,10 @@
         "year":"2023",
         "img" : "/assets/images/illustrations/LOLA_BATHROOM.jpg",
         "order" : 11
+    },
+    "YAMO": {
+        "year":"2025",
+        "img" : "/assets/images/illustrations/YAMO.jpg",
+        "order" : 12
     }
 }

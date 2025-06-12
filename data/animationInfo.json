@@ -109,13 +109,21 @@
         "url" : "https://www.youtube.com/watch?v=QsZTWSgIn8g"
     },
     "scrapz": {
-        "year":"NEW!",
+        "year":"2025",
         "info1" : "animation, music, everything by me.",
         "info2" : "film for my album 'scrapz'.",
         "info3" : "1 minute.",
         "img" : "/assets/images/scrapz_anim.gif",
         "order" : 16,
         "url" : "https://www.youtube.com/watch?v=ejN0WUjRF20"
+    },
+    "MAD DAWG": {
+        "year":"NEW!",
+        "info1" : "animation, music, sound design by me.",
+        "info2" : "original idea + script by @finstervelli. last song is by Smino. voice acting by Smino & Fin.",
+        "info3" : "3 minutes and 52 seconds.",
+        "img" : "/assets/images/madDawg.gif",
+        "order" : 17,
+        "url" : "https://www.youtube.com/watch?v=Jlkhbp6QwfE"
     }
-    
 }

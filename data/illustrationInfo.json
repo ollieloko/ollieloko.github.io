@@ -53,5 +53,10 @@
         "year":"NEW!",
         "img" : "/assets/images/illustrations/YAMO.jpg",
         "order" : 12
+    },
+    "BING BONG": {
+        "year":"NEW!",
+        "img" : "/assets/images/illustrations/BING_BONG.pmh",
+        "order" : 13
     }
 }
